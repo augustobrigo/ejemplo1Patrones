@@ -15,8 +15,18 @@
         <input type="text" id="patron2" placeholder="5" pattern="[1-5]{1}"><br>
        </label>
         <label for="patron4">apartado D
-            <input type="text" id="patron4" placeholder="DAM1,DAM2,DAW1,DAW2,SMR1,SMR2,ASIR1,ASIR2" pattern="DAM|DAW|ASIR|SMR">
+            <input type="text" id="patron4" placeholder="DAM1,DAM2,DAW1,DAW2,SMR1,SMR2,ASIR1,ASIR2" pattern="DA[M,W][1-2]|ASIR[1-2|SMR[1-2]">
+       </label>
+       <!-- CORREO GMAIL: ENTRE 3-50 CARACTERES, empieza por minúscula,-->
+       <label for="correoGmail">correo gmail    
+        <input required type="text" title="utiliza correo de gmail" id="correoGmail" placeholder="aaa@gmail.com" pattern=[a-z][A-Z,a-z,0-9]{2,49}@gmail.com>
+      </label>
+      <!-- 16 números en grupo de 4, puede ir todo junto, pueden ir 
+       separados por - o espacios en blanco -->
+       <label for="visa">Tarjeta crédito
+       <input type="text" required title="Nº tarjeta crédito" id="visa" placeholder="xxxx xxxx xxxx xxxx"  pattern="[0-9]{4}([-, ]?)[0-9]{4}\1[0-9]{4}\1[0-9]{4}">
     </label>
+      <input type="submit" value="aceptar"> 
     </form>  
   </body>
 </html>

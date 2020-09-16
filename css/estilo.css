@@ -9,6 +9,8 @@ input:invalid{    color:red;}
    /*campo requerido:*/
 
    input[required]{ background-color:lightblue; }
+   input[required]:valid{ background-color:lightcoral; }
+   input[required]:invalid{ background-color:rgb(228, 231, 22); }
 
 /* campo con cursor*/
 
